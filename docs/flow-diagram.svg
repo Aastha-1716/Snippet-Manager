@@ -16,14 +16,14 @@
       <stop offset="100%" stop-color="#38bdf8"/>
     </linearGradient>
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 z" fill="#93c5fd"/>
+    <marker id="arrow" viewBox="0 0 4 4" refX="3" refY="2" markerWidth="4" markerHeight="4" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M0 0 L4 2 L0 4 z" fill="#93c5fd"/>
     </marker>
 
     <path id="mainToApp" d="M 255 100 L 365 100"/>
@@ -73,7 +73,7 @@
     <text x="1915" y="227" text-anchor="middle">UI</text>
   </g>
 
-  <g fill="none" stroke="#60a5fa" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+  <g fill="none" stroke="#60a5fa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
     <path d="M 400 215 L 500 215" marker-end="url(#arrow)"/>
     <path d="M 860 215 L 950 215" marker-end="url(#arrow)"/>
     <path d="M 1060 215 L 1190 120" marker-end="url(#arrow)"/>
@@ -83,7 +83,7 @@
     <path d="M 1800 215 L 1850 215" marker-end="url(#arrow)"/>
   </g>
 
-  <g fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="16 22" opacity="0.85">
+  <g fill="none" stroke="url(#accent)" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="8 12" opacity="0.85">
     <path d="M 400 215 L 500 215"/>
     <path d="M 860 215 L 950 215"/>
     <path d="M 1060 215 L 1190 220"/>
@@ -92,27 +92,27 @@
   </g>
 
   <g fill="#38bdf8" filter="url(#glow)">
-    <circle r="10">
+    <circle r="6">
       <animateMotion dur="2.7s" repeatCount="indefinite" rotate="auto">
         <mpath href="#flowLine"/>
       </animateMotion>
     </circle>
-    <circle r="10">
+    <circle r="6">
       <animateMotion dur="3.2s" repeatCount="indefinite" begin="0.8s" rotate="auto">
         <mpath href="#repoFlow"/>
       </animateMotion>
     </circle>
-    <circle r="8" fill="#22c55e">
+    <circle r="5" fill="#22c55e">
       <animateMotion dur="4.2s" repeatCount="indefinite" begin="1.4s" rotate="auto">
         <mpath href="#decisionToMySQL"/>
       </animateMotion>
     </circle>
-    <circle r="8" fill="#f59e0b">
+    <circle r="5" fill="#f59e0b">
       <animateMotion dur="4.2s" repeatCount="indefinite" begin="2.2s" rotate="auto">
         <mpath href="#decisionToNeon"/>
       </animateMotion>
     </circle>
-    <circle r="8" fill="#a78bfa">
+    <circle r="5" fill="#a78bfa">
       <animateMotion dur="4.2s" repeatCount="indefinite" begin="3.0s" rotate="auto">
         <mpath href="#decisionToLocal"/>
       </animateMotion>
