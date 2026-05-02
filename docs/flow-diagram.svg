@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="660" viewBox="0 0 2200 660" role="img" aria-labelledby="title desc">
+  <title id="title">Animated flow diagram</title>
+  <desc id="desc">Animated arrows showing the Code Snippet Manager runtime flow from Main to the dashboard and repository selection.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#93c5fd"/>
+    </marker>
+
+    <path id="mainToApp" d="M 255 100 L 365 100"/>
+    <path id="appToDecision" d="M 535 100 L 640 100"/>
+    <path id="decisionToMySQL" d="M 710 78 L 830 40"/>
+    <path id="decisionToNeon" d="M 710 100 L 830 100"/>
+    <path id="decisionToLocal" d="M 710 122 L 830 160"/>
+    <path id="repoToService" d="M 1055 100 L 1165 100"/>
+    <path id="serviceToUi" d="M 1260 100 L 1350 100"/>
+
+    <path id="flowLine" d="M 255 100 L 365 100 L 535 100 L 640 100"/>
+    <path id="repoFlow" d="M 710 100 L 830 100 L 1055 100 L 1165 100 L 1260 100 L 1350 100"/>
+  </defs>
+
+  <rect width="2200" height="660" fill="url(#bg)" rx="30"/>
+
+  <g opacity="0.16" stroke="#93c5fd" stroke-width="1.2">
+    <path d="M 40 50 H 1360"/>
+    <path d="M 40 370 H 1360"/>
+    <path d="M 120 20 V 400"/>
+    <path d="M 1280 20 V 400"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#e5e7eb">
+    <text x="90" y="92">Code Snippet Manager Runtime Flow</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <rect x="100" y="165" width="300" height="100" rx="22" fill="url(#panel)" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="500" y="165" width="360" height="100" rx="22" fill="url(#panel)" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="950" y="165" width="110" height="100" rx="22" fill="#111827" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="1190" y="75" width="360" height="90" rx="22" fill="url(#panel)" stroke="#22c55e" stroke-width="2"/>
+    <rect x="1190" y="175" width="360" height="90" rx="22" fill="url(#panel)" stroke="#f59e0b" stroke-width="2"/>
+    <rect x="1190" y="275" width="360" height="90" rx="22" fill="url(#panel)" stroke="#a78bfa" stroke-width="2"/>
+    <rect x="1630" y="165" width="170" height="100" rx="22" fill="url(#panel)" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="1850" y="165" width="130" height="100" rx="22" fill="url(#panel)" stroke="#38bdf8" stroke-width="2"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#f8fafc">
+    <text x="250" y="227" text-anchor="middle">Main</text>
+    <text x="680" y="227" text-anchor="middle">SnippetApplication</text>
+    <text x="1005" y="227" text-anchor="middle">DB</text>
+    <text x="1370" y="126" text-anchor="middle">Railway MySQL</text>
+    <text x="1370" y="226" text-anchor="middle">Neon / Postgres</text>
+    <text x="1370" y="326" text-anchor="middle">Local Storage</text>
+    <text x="1715" y="227" text-anchor="middle">SnippetService</text>
+    <text x="1915" y="227" text-anchor="middle">UI</text>
+  </g>
+
+  <g fill="none" stroke="#60a5fa" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M 400 215 L 500 215" marker-end="url(#arrow)"/>
+    <path d="M 860 215 L 950 215" marker-end="url(#arrow)"/>
+    <path d="M 1060 215 L 1190 120" marker-end="url(#arrow)"/>
+    <path d="M 1060 215 L 1190 220" marker-end="url(#arrow)"/>
+    <path d="M 1060 215 L 1190 320" marker-end="url(#arrow)"/>
+    <path d="M 1550 215 L 1630 215" marker-end="url(#arrow)"/>
+    <path d="M 1800 215 L 1850 215" marker-end="url(#arrow)"/>
+  </g>
+
+  <g fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-dasharray="16 22" opacity="0.85">
+    <path d="M 400 215 L 500 215"/>
+    <path d="M 860 215 L 950 215"/>
+    <path d="M 1060 215 L 1190 220"/>
+    <path d="M 1550 215 L 1630 215"/>
+    <path d="M 1800 215 L 1850 215"/>
+  </g>
+
+  <g fill="#38bdf8" filter="url(#glow)">
+    <circle r="10">
+      <animateMotion dur="2.7s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#flowLine"/>
+      </animateMotion>
+    </circle>
+    <circle r="10">
+      <animateMotion dur="3.2s" repeatCount="indefinite" begin="0.8s" rotate="auto">
+        <mpath href="#repoFlow"/>
+      </animateMotion>
+    </circle>
+    <circle r="8" fill="#22c55e">
+      <animateMotion dur="4.2s" repeatCount="indefinite" begin="1.4s" rotate="auto">
+        <mpath href="#decisionToMySQL"/>
+      </animateMotion>
+    </circle>
+    <circle r="8" fill="#f59e0b">
+      <animateMotion dur="4.2s" repeatCount="indefinite" begin="2.2s" rotate="auto">
+        <mpath href="#decisionToNeon"/>
+      </animateMotion>
+    </circle>
+    <circle r="8" fill="#a78bfa">
+      <animateMotion dur="4.2s" repeatCount="indefinite" begin="3.0s" rotate="auto">
+        <mpath href="#decisionToLocal"/>
+      </animateMotion>
+    </circle>
+  </g>
+</svg>
