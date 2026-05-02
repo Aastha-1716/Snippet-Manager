@@ -49,6 +49,7 @@ Repository priority:
 
 <img src="docs/flow-diagram.svg" alt="Animated flow diagram showing Main -> SnippetApplication -> repository selection -> SnippetService -> UI" />
 
+
 How it works:
 
 - `Main` starts the app.
