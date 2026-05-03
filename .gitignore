@@ -1,0 +1,8 @@
+target/
+out/
+.stackdump
+*.stackdump
+.env
+.idea/
+*.iml
+.DS_Store
