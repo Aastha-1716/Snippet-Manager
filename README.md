@@ -151,3 +151,6 @@ Optional user and password variables are also supported for both paths.
 - The app seeds sample snippets when the database is empty.
 - If no database is configured, it falls back to local storage.
 - The executable entry point is `com.snippetmanager.Main`.
+
+
+Youtube Link - https://youtu.be/b5IOisLQtCo?si=ag6Mf0LAOvXzywIT
